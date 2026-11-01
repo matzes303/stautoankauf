@@ -1,0 +1,651 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>ST Automobile Ankauf</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Verkaufe dein Auto mit Motorschaden oder Unfallschaden an ST Automobile: Ankauf in ganz Bayern und Baden-Württemberg, kostenlose Abholung, Geld sofort – bar oder per Überweisung.">
+<meta name="theme-color" content="#111012">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/archivo-se-Medium.woff" as="font" type="font/woff" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutomotiveBusiness","name":"ST Automobile","legalName":"Stöckl & Straßer GbR","url":"https://stautoankauf.de","description":"Ankauf von Autos mit Motorschaden, Unfallschaden, ohne TÜV oder nicht fahrbereit. Kostenlose Abholung in ganz Bayern und Baden-Württemberg.","telephone":"+49 151 29629104","email":"stauto.ankauf@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Angerweg 1","postalCode":"86672","addressLocality":"Thierhaupten","addressCountry":"DE"},"areaServed":[{"@type":"State","name":"Bayern"},{"@type":"State","name":"Baden-Württemberg"}]}
+</script>
+<style>
+/* Layout: nur die Kopfleiste schwarz (Logo + WhatsApp), alles darunter auf Weiß mit feinen Linien; Formular als Herzstück; mobil feste Aktionsleiste unten. Festes Markenbild, daher kein Dark-Mode-Wechsel. */
+@font-face{font-family:"Archivo SE";src:url("assets/fonts/archivo-se-Medium.woff") format("woff");font-weight:500;font-display:swap}
+@font-face{font-family:"Archivo SE";src:url("assets/fonts/archivo-se-SemiBold.woff") format("woff");font-weight:600 700;font-display:swap}
+:root{
+  --ink:#111012;        /* Markenschwarz (Kopfleiste) */
+  --red:#d7141a;        /* Logo-Rot */
+  --red-dark:#b00f15;
+  --white:#ffffff;
+  --bg:#f2f2f5;         /* Seitenhintergrund: kühles Hellgrau */
+  --tint:#f7f7fa;       /* helle Fläche in weißen Karten */
+  --text:#18171a;
+  --muted:#635f68;
+  --line:#e1e0e6;
+  --ok:#137a3b;
+  --wa:#1fa855;
+  --wa-dark:#178a45;
+  --display:"Archivo SE",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  --body:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --r:12px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+section,#anfrage{scroll-margin-top:calc(64px + env(safe-area-inset-top,0px))}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 var(--body);-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,legend{font-family:var(--display);text-wrap:balance;margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font:600 12px/1.5 var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:var(--r);border:0;font:600 15px/1.2 var(--display);letter-spacing:.01em;text-decoration:none;cursor:pointer;transition:background .15s,transform .15s;text-align:center}
+.btn:active{transform:scale(.98)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #f59a9d;outline-offset:2px}
+.btn-red{background:var(--red);color:var(--white)}
+.btn-red:hover{background:var(--red-dark)}
+.btn-wa{background:var(--wa);color:var(--white)}
+.btn-wa:hover{background:var(--wa-dark)}
+.btn-light{background:var(--tint);color:var(--text);border:1px solid var(--line)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Kopfleiste (schwarz) */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:8px}
+.logo img{height:48px;width:auto}
+.top .btn{min-height:42px;padding:0 16px;font-size:14px}
+@media (max-width:640px){.logo img{height:40px}}
+
+/* Hero */
+.hero{background:radial-gradient(1200px 500px at 85% -10%,rgba(215,20,26,.07),transparent 60%),linear-gradient(180deg,var(--white) 0%,var(--bg) 100%)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.hero-cta .btn{flex:1 1 auto;white-space:nowrap}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-block:56px 64px}
+.hero .wrap>*{min-width:0}
+.hero h1{font-weight:500;font-size:clamp(29px,4.6vw,48px);line-height:1.1;letter-spacing:-.02em;margin-top:16px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero-lead{color:var(--muted);font-size:18px;max-width:33em;margin:18px 0 0}
+.facts{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
+.facts li{display:flex;gap:10px;align-items:flex-start;font-weight:600;font-size:15px}
+.facts svg{width:20px;height:20px;flex:none;color:var(--red);margin-top:2px}
+.hero-photo{margin:0;position:relative;border-radius:18px;overflow:hidden}
+.hero-photo img{width:100%;height:auto;aspect-ratio:2576/1450;object-fit:cover}
+.hero-photo figcaption{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);color:var(--text);font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px}
+
+/* PLZ-Check */
+.check{margin-top:28px;background:var(--tint);border:1px solid var(--line);border-radius:16px;padding:18px}
+.check label{display:block;font:600 15px/1.3 var(--display);margin-bottom:12px}
+.check input{width:100%;height:56px;border-radius:var(--r);border:1.5px solid var(--line);background:var(--white);color:var(--text);font:600 22px/1 var(--display);letter-spacing:.14em;padding:0 16px}
+.check input::placeholder{color:#a5a1a7;letter-spacing:.04em;font-weight:400;font-size:17px}
+.check input:focus{border-color:var(--text);outline:none}
+.check-result{margin:12px 0 0;font-size:15px;font-weight:600}
+.check-result:empty{display:none}
+.check-result.ok{color:var(--ok)}
+.check-result.no{color:var(--red)}
+.check-result .btn{margin-top:12px;width:100%}
+
+/* Abschnitte */
+section{padding-block:72px;border-top:1px solid var(--line)}
+.sec-head{max-width:640px;margin-bottom:32px}
+.sec-head h2{font-weight:500;font-size:clamp(24px,3.3vw,33px);line-height:1.18;letter-spacing:-.015em;margin-top:12px}
+.sec-head p{color:var(--muted);margin:12px 0 0;font-size:17px}
+
+.kinds{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.kind{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:20px 18px}
+.kind b{display:block;font:600 17px/1.3 var(--display);margin-bottom:6px}
+.kind span{color:var(--muted);font-size:14px;line-height:1.5;display:block}
+.kind.main{border:1.5px solid var(--red)}
+.kind.main b{color:var(--red)}
+
+/* Ablauf */
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.step-list{list-style:none;margin:0;padding:0;counter-reset:s}
+.step-list li{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:20px 0;border-top:1px solid var(--line);counter-increment:s}
+.step-list li:first-child{border-top:0;padding-top:0}
+.step-list li::before{content:counter(s);width:44px;height:44px;border-radius:50%;border:1.5px solid var(--red);color:var(--red);display:grid;place-items:center;font:700 17px/1 var(--display)}
+.step-list h3{font-weight:600;font-size:18px;margin-top:10px}
+.step-list p{margin:6px 0 0;color:var(--muted)}
+.step-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.step-photos figure{margin:0;border-radius:14px;overflow:hidden;background:var(--tint)}
+.step-photos img{width:100%;height:100%;aspect-ratio:4/5;object-fit:cover}
+.step-photos figure:first-child{grid-column:1/-1}
+.step-photos figure:first-child img{aspect-ratio:16/10}
+
+/* Gebiet */
+.states{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.state{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:26px}
+.state h3{font-weight:600;font-size:21px;display:flex;align-items:center;gap:10px}
+.state h3::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--red);flex:none}
+.cities{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.cities li{padding:7px 13px;border:1px solid var(--line);border-radius:999px;font-size:14px;font-weight:600;background:var(--tint)}
+.area-note{margin:18px 0 0;color:var(--muted)}
+
+/* Formular */
+.form-side{display:grid;grid-template-columns:minmax(0,760px) minmax(0,1fr);gap:32px;align-items:start}
+.form-card{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 24px 60px -36px rgba(17,16,18,.35)}
+.progress{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}
+.progress div{padding:14px 8px;font:600 13px/1.3 var(--display);color:#a5a1a7;text-align:center;border-bottom:3px solid transparent}
+.progress div.on{color:var(--text);border-color:var(--red)}
+.progress div.done{color:var(--ok)}
+.progress b{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:2px}
+form{padding:26px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:600;font-size:20px;margin-bottom:18px;padding:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.full{grid-column:1/-1}
+.field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.field>label,.field>.lbl{font-weight:600;font-size:14px}
+.field .opt{font-weight:400;color:var(--muted)}
+.field input,.field select,.field textarea{width:100%;height:52px;border:1.5px solid var(--line);border-radius:var(--r);background:var(--white);color:var(--text);font:16px var(--body);padding:0 14px}
+.field select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 20px) 22px,calc(100% - 15px) 22px;background-size:5px 5px;background-repeat:no-repeat;padding-right:36px}
+.field textarea{height:100px;padding:12px 14px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--text);outline:none}
+.field .hint{font-size:13px;color:var(--muted)}
+.field.err input,.field.err select{border-color:var(--red)}
+.field .msg{display:none;color:var(--red);font-size:13px;font-weight:600}
+.field.err .msg{display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{position:relative}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:1.5px solid var(--line);border-radius:999px;font:600 14px/1 var(--display);cursor:pointer;background:var(--white);user-select:none}
+.field.err .chips span{border-color:#f0b7b9}
+.chips input:checked+span{background:var(--text);border-color:var(--text);color:var(--white)}
+.chips input:focus-visible+span{outline:3px solid #f59a9d;outline-offset:2px}
+.plz-status{font-size:14px;font-weight:600}
+.plz-status:empty{display:none}
+.plz-status.ok{color:var(--ok)}
+.plz-status.no{color:var(--red)}
+.out-box{background:#fff4f4;border:1px solid #f5cfd0;border-radius:var(--r);padding:16px;font-size:15px}
+.out-box .btn{margin-top:12px}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:26px}
+.nav .btn{flex:1}
+.privacy{font-size:13px;color:var(--muted);margin:16px 0 0}
+.hp{position:absolute;left:-5000px;width:1px;height:1px;overflow:hidden}
+.done-box{padding:32px 26px}
+.done-box h3{font-weight:500;font-size:26px;margin-top:12px;letter-spacing:-.02em}
+.done-box p{color:var(--muted);margin:12px 0 0}
+.done-box .btn{width:100%;margin-top:20px}
+.preview{margin-top:24px;border:1px dashed #cfcbcd;border-radius:var(--r);padding:16px;background:var(--tint);font-size:13px}
+.preview b{display:block;margin-bottom:8px}
+.preview pre{white-space:pre-wrap;word-break:break-word;margin:0;font:13px/1.55 ui-monospace,Menlo,Consolas,monospace}
+.contact-card{border:1px solid var(--line);border-radius:20px;padding:24px;background:var(--white)}
+.contact-card h3{font-weight:600;font-size:19px}
+.contact-card p{color:var(--muted);margin:8px 0 16px;font-size:15px}
+.contact-card .num{font:700 22px/1.2 var(--display);letter-spacing:.01em;user-select:all;margin-bottom:16px}
+.contact-card .btn{width:100%}
+
+/* FAQ */
+.faq{max-width:780px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;font:600 17px/1.4 var(--display);padding:18px 36px 18px 0;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:13px;font:400 26px/1 var(--display);color:var(--red)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:0 0 18px;color:var(--muted)}
+
+/* Fußzeile */
+footer{background:var(--white);border-top:1px solid var(--line);padding-block:44px 48px;font-size:14px;color:var(--muted)}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:28px}
+footer img{height:58px;width:auto;margin-bottom:10px}
+footer b{color:var(--text);display:block;margin-bottom:6px;font:600 14px/1.4 var(--display)}
+footer .legal{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18px;display:flex;flex-wrap:wrap;gap:8px 22px}
+
+/* Mobile Aktionsleiste */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:none;gap:8px;padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+.mbar .btn{flex:1;min-height:50px;font-size:14px;padding:0 12px}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:28px;padding-block:20px 44px}
+  .hero-photo{border-radius:16px}
+  .hero-cta{display:none}
+  .kinds{grid-template-columns:1fr;gap:10px}
+  .kind{display:grid;grid-template-columns:150px 1fr;gap:12px;align-items:baseline;padding:16px}
+  .kind b{margin:0;font-size:16px}
+  .mbar{transition:transform .25s}
+  .mbar.away{transform:translateY(110%)}
+  .steps,.states,.form-side{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+  footer{padding-bottom:120px}
+  .mbar{display:flex}
+  section{padding-block:52px}
+}
+@media (max-width:520px){
+  .eyebrow{font-size:11px;letter-spacing:.1em}
+  .hero h1{font-size:31px}
+  .kind{grid-template-columns:1fr;gap:4px}
+  .step-list li{grid-template-columns:38px 1fr;gap:14px}
+  .step-list li::before{width:38px;height:38px;font-size:15px}
+  .step-list h3{margin-top:7px}
+  .grid{grid-template-columns:1fr}
+  .facts{grid-template-columns:1fr}
+  form{padding:20px}
+  .hero-lead{font-size:17px}
+  .progress div{font-size:12px;padding:12px 4px}
+}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#start" aria-label="ST Automobile – zum Seitenanfang"><img src="assets/logo.png" alt="ST Automobile" width="360" height="218"></a>
+    <a class="btn btn-wa wa-link" href="https://wa.me/4915129629104" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+      WhatsApp schreiben
+    </a>
+  </div>
+</header>
+
+<main id="start">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Autoankauf in Bayern &amp; Baden-Württemberg</p>
+        <h1>Verkaufe deinen <em>Motorschaden</em> oder <em>Unfallschaden</em>.</h1>
+        <p class="hero-lead">Wir kaufen dein Auto in jedem Zustand, auch ohne TÜV und nicht fahrbereit. Wir holen es kostenlos mit dem Anhänger ab und du bekommst dein Geld sofort.</p>
+        <ul class="facts">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Kostenlose Abholung</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Geld sofort: bar oder Überweisung</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Auch ohne TÜV</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Auch nicht fahrbereit</li>
+        </ul>
+        <div class="hero-cta">
+          <a class="btn btn-red" href="#anfrage">Kostenloses Angebot anfordern</a>
+          <a class="btn btn-wa wa-link" href="https://wa.me/4915129629104" target="_blank" rel="noopener">Per WhatsApp schreiben</a>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <picture>
+          <source type="image/webp" srcset="assets/abholung-800.webp 800w, assets/abholung-1400.webp 1400w, assets/abholung-2000.webp 2000w" sizes="(max-width:900px) 100vw, 540px">
+          <img src="assets/abholung-1400.webp" alt="Unser Transporter mit Autoanhänger und einem abgeholten BMW" width="1400" height="788" fetchpriority="high">
+        </picture>
+        <figcaption>Kostenlose Abholung mit eigenem Anhänger</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Was wir ankaufen</p>
+        <h2>Dein Auto ist kaputt? Genau das kaufen wir.</h2>
+        <p>Egal ob Motorschaden oder Unfallschaden: Du musst nichts reparieren und nichts vorbereiten.</p>
+      </div>
+      <div class="kinds">
+        <div class="kind main"><b>Motorschaden</b><span>Motor defekt, springt nicht an, Kolbenfresser, Zahnriemen</span></div>
+        <div class="kind main"><b>Unfallschaden</b><span>Unfallwagen mit Blechschaden oder schwerem Unfallschaden</span></div>
+        <div class="kind"><b>Getriebeschaden</b><span>Getriebe oder Kupplung kaputt</span></div>
+        <div class="kind"><b>Ohne TÜV</b><span>TÜV abgelaufen oder Reparatur zu teuer</span></div>
+        <div class="kind"><b>Nicht fahrbereit</b><span>Wir laden mit der Seilwinde auf</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap steps">
+      <div>
+        <div class="sec-head">
+          <p class="eyebrow">So läuft's ab</p>
+          <h2>In drei Schritten verkauft.</h2>
+        </div>
+        <ol class="step-list">
+          <li><div><h3>Anfrage senden</h3><p>Füll das kurze Formular aus und schick uns ein paar Fotos per WhatsApp.</p></div></li>
+          <li><div><h3>Angebot erhalten</h3><p>Wir melden uns mit einem konkreten Preis für dein Auto. Du entscheidest in Ruhe.</p></div></li>
+          <li><div><h3>Abholung &amp; Geld</h3><p>Wir holen das Auto kostenlos mit dem Anhänger ab. Du bekommst dein Geld sofort: bar oder per Überweisung.</p></div></li>
+        </ol>
+      </div>
+      <div class="step-photos">
+        <figure>
+          <picture><source type="image/webp" srcset="assets/trailer-heck-700.webp 700w, assets/trailer-heck-1200.webp 1200w" sizes="(max-width:900px) 100vw, 520px"><img src="assets/trailer-heck-700.webp" alt="Abgeholtes Auto sicher auf dem Anhänger verzurrt" loading="lazy" width="700" height="484"></picture>
+        </figure>
+        <figure>
+          <picture><source type="image/webp" srcset="assets/seilwinde-600.webp 600w, assets/seilwinde-1000.webp 1000w" sizes="(max-width:900px) 50vw, 260px"><img src="assets/seilwinde-600.webp" alt="Seilwinde zieht ein nicht fahrbereites Auto auf den Anhänger" loading="lazy" width="600" height="750"></picture>
+        </figure>
+        <figure>
+          <picture><source type="image/webp" srcset="assets/spanngurte-600.webp 600w, assets/spanngurte-1000.webp 1000w" sizes="(max-width:900px) 50vw, 260px"><img src="assets/spanngurte-600.webp" alt="Rad mit Spanngurt auf dem Anhänger gesichert" loading="lazy" width="600" height="621"></picture>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Ankaufsgebiet</p>
+        <h2>Wir kommen zu dir. In ganz Bayern und Baden-Württemberg.</h2>
+        <p>Unser Standort ist Thierhaupten bei Augsburg. Von dort holen wir dein Auto in beiden Bundesländern kostenlos ab.</p>
+      </div>
+      <div class="states">
+        <div class="state">
+          <h3>Bayern</h3>
+          <ul class="cities" aria-label="Städte in Bayern">
+            <li>München</li>
+            <li>Nürnberg</li>
+            <li>Augsburg</li>
+            <li>Regensburg</li>
+            <li>Ingolstadt</li>
+            <li>Würzburg</li>
+            <li>Fürth</li>
+            <li>Erlangen</li>
+            <li>Bamberg</li>
+            <li>Bayreuth</li>
+            <li>Landshut</li>
+            <li>Passau</li>
+            <li>Rosenheim</li>
+            <li>Kempten</li>
+            <li>Aschaffenburg</li>
+            <li>Neu-Ulm</li>
+          </ul>
+        </div>
+        <div class="state">
+          <h3>Baden-Württemberg</h3>
+          <ul class="cities" aria-label="Städte in Baden-Württemberg">
+            <li>Stuttgart</li>
+            <li>Mannheim</li>
+            <li>Karlsruhe</li>
+            <li>Freiburg</li>
+            <li>Heidelberg</li>
+            <li>Ulm</li>
+            <li>Heilbronn</li>
+            <li>Pforzheim</li>
+            <li>Reutlingen</li>
+            <li>Esslingen</li>
+            <li>Ludwigsburg</li>
+            <li>Tübingen</li>
+            <li>Konstanz</li>
+            <li>Friedrichshafen</li>
+            <li>Aalen</li>
+            <li>Ravensburg</li>
+          </ul>
+        </div>
+      </div>
+      <p class="area-note">… und natürlich in allen Orten dazwischen, auch auf dem Land.</p>
+    </div>
+  </section>
+
+  <section id="anfrage">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Kostenloses Angebot</p>
+        <h2>Was ist dein Auto wert?</h2>
+        <p>Drei kurze Schritte, ca. 2 Minuten. Je genauer deine Angaben, desto genauer unser Preis.</p>
+      </div>
+      <div class="form-side">
+        <div class="form-card">
+          <div class="progress" aria-hidden="true">
+            <div data-p="1" class="on"><b>Schritt 1</b>Fahrzeug</div>
+            <div data-p="2"><b>Schritt 2</b>Zustand</div>
+            <div data-p="3"><b>Schritt 3</b>Kontakt</div>
+          </div>
+          <form id="f" novalidate>
+            <fieldset data-step="1">
+              <legend>Wo steht dein Auto?</legend>
+              <div class="grid">
+                <div class="field full" data-req>
+                  <label for="plz">Postleitzahl des Standorts</label>
+                  <input id="plz" name="plz" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="z. B. 86150">
+                  <span class="hint">Wir kaufen in ganz Bayern und Baden-Württemberg an.</span>
+                  <span class="msg">Bitte gib eine gültige 5-stellige PLZ ein.</span>
+                </div>
+              </div>
+              <legend style="margin-top:26px">Dein Fahrzeug</legend>
+              <div class="grid">
+                <div class="field" data-req><label for="marke">Marke</label><input id="marke" name="marke" placeholder="z. B. VW" autocomplete="off"><span class="msg">Bitte gib die Marke an.</span></div>
+                <div class="field" data-req><label for="modell">Modell</label><input id="modell" name="modell" placeholder="z. B. Golf 1.6 TDI" autocomplete="off"><span class="msg">Bitte gib das Modell an.</span></div>
+                <div class="field" data-req><label for="ez">Erstzulassung (Jahr)</label><input id="ez" name="erstzulassung" inputmode="numeric" maxlength="4" placeholder="z. B. 2012"><span class="msg">Bitte gib ein Jahr an, z. B. 2012.</span></div>
+                <div class="field" data-req><label for="km">Kilometerstand</label><input id="km" name="kilometer" inputmode="numeric" placeholder="z. B. 185000"><span class="msg">Bitte gib den Kilometerstand an.</span></div>
+                <div class="field" data-req><label for="kraftstoff">Kraftstoff</label>
+                  <select id="kraftstoff" name="kraftstoff"><option value="">Bitte wählen</option><option>Benzin</option><option>Diesel</option><option>Hybrid</option><option>Elektro</option><option>Gas (LPG/CNG)</option></select><span class="msg">Bitte auswählen.</span></div>
+                <div class="field" data-req><label for="getriebe">Getriebe</label>
+                  <select id="getriebe" name="getriebe"><option value="">Bitte wählen</option><option>Schaltgetriebe</option><option>Automatik</option></select><span class="msg">Bitte auswählen.</span></div>
+                <div class="field"><label for="ps">Leistung <span class="opt">(optional)</span></label><input id="ps" name="leistung" placeholder="z. B. 105 PS oder 77 kW"></div>
+                <div class="field"><label for="hsntsn">HSN / TSN <span class="opt">(optional)</span></label><input id="hsntsn" name="hsn_tsn" placeholder="z. B. 0603 / BHS" autocomplete="off"><span class="hint">Steht im Fahrzeugschein (Feld 2.1 und 2.2).</span></div>
+              </div>
+            </fieldset>
+
+            <fieldset data-step="2" hidden>
+              <legend>Schaden &amp; Zustand</legend>
+              <div class="grid">
+                <div class="field full" data-req data-group="schaden">
+                  <span class="lbl" id="l-schaden">Art des Schadens</span>
+                  <div class="chips" role="group" aria-labelledby="l-schaden">
+                    <label><input type="radio" name="schaden" value="Motorschaden"><span>Motorschaden</span></label>
+                    <label><input type="radio" name="schaden" value="Unfallschaden"><span>Unfallschaden</span></label>
+                    <label><input type="radio" name="schaden" value="Getriebeschaden"><span>Getriebeschaden</span></label>
+                    <label><input type="radio" name="schaden" value="Sonstiges"><span>Sonstiges</span></label>
+                  </div>
+                  <span class="msg">Bitte wähle die Art des Schadens.</span>
+                </div>
+                <div class="full" id="unfall-extra" hidden>
+                  <div class="grid">
+                    <div class="field"><label for="unfallstelle">Wo ist der Unfallschaden?</label>
+                      <select id="unfallstelle" name="unfallstelle"><option value="">Bitte wählen</option><option>Vorne</option><option>Hinten</option><option>Seite links</option><option>Seite rechts</option><option>Mehrere Stellen</option></select></div>
+                    <div class="field"><label for="airbags">Airbags ausgelöst?</label>
+                      <select id="airbags" name="airbags"><option value="">Bitte wählen</option><option>Nein</option><option>Ja</option><option>Weiß nicht</option></select></div>
+                  </div>
+                </div>
+                <div class="field" data-req data-group="anspringen">
+                  <span class="lbl" id="l-ans">Springt der Motor an?</span>
+                  <div class="chips" role="group" aria-labelledby="l-ans">
+                    <label><input type="radio" name="anspringen" value="Ja"><span>Ja</span></label>
+                    <label><input type="radio" name="anspringen" value="Nein"><span>Nein</span></label>
+                  </div><span class="msg">Bitte auswählen.</span>
+                </div>
+                <div class="field" data-req data-group="fahrbereit">
+                  <span class="lbl" id="l-fb">Fahrbereit?</span>
+                  <div class="chips" role="group" aria-labelledby="l-fb">
+                    <label><input type="radio" name="fahrbereit" value="Ja"><span>Ja</span></label>
+                    <label><input type="radio" name="fahrbereit" value="Nein"><span>Nein</span></label>
+                  </div><span class="msg">Bitte auswählen.</span>
+                </div>
+                <div class="field"><label for="tuev">TÜV bis <span class="opt">(optional)</span></label><input id="tuev" name="tuev" placeholder="z. B. 05/2026 oder abgelaufen"></div>
+                <div class="field" data-req><label for="angemeldet">Zulassung</label>
+                  <select id="angemeldet" name="zulassung"><option value="">Bitte wählen</option><option>Angemeldet</option><option>Abgemeldet</option></select><span class="msg">Bitte auswählen.</span></div>
+                <div class="field" data-req><label for="brief">Fahrzeugbrief vorhanden?</label>
+                  <select id="brief" name="fahrzeugbrief"><option value="">Bitte wählen</option><option>Ja</option><option>Nein</option></select><span class="msg">Bitte auswählen.</span></div>
+                <div class="field" data-req><label for="schluessel">Schlüssel vorhanden?</label>
+                  <select id="schluessel" name="schluessel"><option value="">Bitte wählen</option><option>Ja, 2 oder mehr</option><option>Ja, 1</option><option>Nein</option></select><span class="msg">Bitte auswählen.</span></div>
+                <div class="field full"><label for="beschreibung">Kurze Beschreibung <span class="opt">(optional)</span></label><textarea id="beschreibung" name="beschreibung" placeholder="Was ist passiert? Was ist kaputt? Sonstige Mängel?"></textarea></div>
+              </div>
+            </fieldset>
+
+            <fieldset data-step="3" hidden>
+              <legend>Wie erreichen wir dich?</legend>
+              <div class="grid">
+                <div class="field full" data-req><label for="name">Name</label><input id="name" name="name" autocomplete="name" placeholder="Vor- und Nachname"><span class="msg">Bitte gib deinen Namen an.</span></div>
+                <div class="field" data-req><label for="tel">Handynummer (für WhatsApp)</label><input id="tel" name="telefon" type="tel" autocomplete="tel" placeholder="z. B. 0170 1234567"><span class="msg">Bitte gib deine Handynummer an.</span></div>
+                <div class="field" data-req><label for="mail">E-Mail</label><input id="mail" name="email" type="email" autocomplete="email" placeholder="name@beispiel.de"><span class="msg">Bitte gib eine gültige E-Mail-Adresse an.</span></div>
+                <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="botcheck" tabindex="-1" autocomplete="off"></div>
+              </div>
+              <p class="privacy">Mit dem Absenden werden deine Angaben zur Bearbeitung deiner Anfrage an uns übermittelt. Details in der Datenschutzerklärung.</p>
+            </fieldset>
+
+            <div class="nav">
+              <button type="button" class="btn btn-light" id="back" hidden>Zurück</button>
+              <button type="button" class="btn btn-red" id="next">Weiter</button>
+              <button type="submit" class="btn btn-red" id="send" hidden>Kostenloses Angebot anfordern</button>
+            </div>
+          </form>
+          <div class="done-box" id="done" hidden>
+            <p class="eyebrow">Anfrage gesendet</p>
+            <h3>Danke! Wir melden uns in Kürze.</h3>
+            <p>Für ein schnelleres und genaueres Angebot: Schick uns jetzt 3–4 Fotos deines Autos per WhatsApp (außen rundum, Schaden, Tacho, Fahrzeugschein).</p>
+            <a class="btn btn-wa" id="wa-photos" href="https://wa.me/4915129629104" target="_blank" rel="noopener">Fotos per WhatsApp senden</a>
+            <div class="preview" id="preview" hidden>
+              <b>Vorschau-Modus: Das Formular ist noch nicht mit dem E-Mail-Dienst verbunden. Diese E-Mail ginge an stauto.ankauf@gmail.com:</b>
+              <pre id="preview-text"></pre>
+            </div>
+          </div>
+        </div>
+        <aside class="contact-card">
+          <h3>Lieber direkt schreiben?</h3>
+          <p>Schick uns Fotos und ein paar Infos zu deinem Auto per WhatsApp. Wir antworten schnell.</p>
+          <div class="num">0151 29629104</div>
+          <a class="btn btn-wa wa-link" href="https://wa.me/4915129629104" target="_blank" rel="noopener">WhatsApp öffnen</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Häufige Fragen</p>
+        <h2>Gut zu wissen</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Was kostet die Abholung?</summary><p>Nichts. Die Abholung mit unserem Anhänger ist in ganz Bayern und Baden-Württemberg kostenlos.</p></details>
+        <details><summary>Wie bekomme ich mein Geld?</summary><p>Sofort bei der Abholung, wahlweise bar oder per Überweisung.</p></details>
+        <details><summary>Kauft ihr auch Unfallwagen?</summary><p>Ja. Wir kaufen Autos mit Unfallschaden genauso wie Autos mit Motorschaden oder Getriebeschaden.</p></details>
+        <details><summary>Kauft ihr auch Autos ohne TÜV oder nicht fahrbereit?</summary><p>Ja. Nicht fahrbereite Autos ziehen wir mit der Seilwinde auf den Anhänger.</p></details>
+                <details><summary>Wie erreiche ich euch?</summary><p>Am schnellsten per WhatsApp unter 0151 29629104 oder über das Formular auf dieser Seite.</p></details>
+        <details><summary>Wo kauft ihr an?</summary><p>In ganz Bayern und Baden-Württemberg, zum Beispiel in München, Nürnberg, Augsburg, Regensburg, Stuttgart, Mannheim, Karlsruhe, Freiburg und Ulm, und in allen Orten dazwischen.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><img src="assets/logo-hell.png" alt="ST Automobile" width="360" height="218" loading="lazy"><p style="margin:0">Ankauf von Autos mit Motorschaden und Unfallschaden in ganz Bayern und Baden-Württemberg.</p></div>
+    <div><b>Kontakt</b>WhatsApp: 0151 29629104<br>E-Mail: stauto.ankauf@gmail.com</div>
+    <div><b>Standort</b>Stöckl &amp; Straßer GbR<br>Angerweg 1<br>86672 Thierhaupten</div>
+    <div class="legal"><span>© 2026 ST Automobile</span><a href="#impressum">Impressum</a><a href="#datenschutz">Datenschutz</a></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-wa wa-link" href="https://wa.me/4915129629104" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-red" href="#anfrage">Angebot anfordern</a>
+</div>
+
+<script src="assets/plz.js"></script>
+<script>
+(function(){
+  // Hier später den Zugangsschlüssel von web3forms.com eintragen. Leer = Vorschau-Modus.
+  var WEB3FORMS_KEY = "";
+  var WA = "4915129629104";
+
+  var table = {};
+  (window.PLZ_KM || "").split(",").forEach(function(e){ if(e) table[e.slice(0,5)] = parseInt(e.slice(5),10); });
+  function lookup(p){ return /^\d{5}$/.test(p) ? (p in table ? table[p] : -1) : null; }
+
+  function waHref(text){ return "https://wa.me/" + WA + "?text=" + encodeURIComponent(text); }
+  document.querySelectorAll(".wa-link").forEach(function(a){ a.href = waHref("Hallo, ich möchte mein Auto verkaufen."); });
+
+  var form = document.getElementById("f"), step = 1;
+  var steps = form.querySelectorAll("fieldset[data-step]");
+  var next = document.getElementById("next"), back = document.getElementById("back"), send = document.getElementById("send");
+  var bar = document.querySelector(".mbar");
+  if ("IntersectionObserver" in window && bar){
+    new IntersectionObserver(function(es){ bar.classList.toggle("away", es[0].isIntersecting); }, {rootMargin:"0px 0px -30% 0px"}).observe(document.querySelector(".form-card"));
+  }
+  var plz = document.getElementById("plz");
+  plz.addEventListener("input", function(){ plz.value = plz.value.replace(/\D/g,"").slice(0,5); });
+
+  form.querySelectorAll('input[name="schaden"]').forEach(function(r){ r.addEventListener("change", function(){
+    document.getElementById("unfall-extra").hidden = form.schaden.value !== "Unfallschaden";
+  });});
+
+  function valid(field){
+    var g = field.getAttribute("data-group");
+    if (g) return !!form.querySelector('input[name="' + g + '"]:checked');
+    var el = field.querySelector("input,select,textarea"), v = el.value.trim();
+    if (el.id === "plz") return /^\d{5}$/.test(v);
+    if (el.id === "ez") return /^(19[5-9]\d|20[0-2]\d)$/.test(v);
+    if (el.id === "km") return /^[\d.\s]{1,9}$/.test(v);
+    if (el.type === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+    if (el.id === "tel") return v.replace(/\D/g,"").length >= 6;
+    return v.length > 0;
+  }
+  function validateStep(n){
+    var ok = true, first = null;
+    steps[n-1].querySelectorAll("[data-req]").forEach(function(f){
+      var good = valid(f); f.classList.toggle("err", !good);
+      if (!good){ ok = false; if (!first) first = f; }
+    });
+    if (first){ var el = first.querySelector("input,select"); first.scrollIntoView({block:"center", behavior:"smooth"}); if (el && el.type !== "radio") el.focus({preventScroll:true}); }
+    return ok;
+  }
+  function recheck(e){ var f = e.target.closest(".field.err"); if (f && valid(f)) f.classList.remove("err"); }
+  form.addEventListener("input", recheck);
+  form.addEventListener("change", recheck);
+
+  function show(n){
+    step = n;
+    steps.forEach(function(s){ s.hidden = +s.getAttribute("data-step") !== n; });
+    document.querySelectorAll(".progress div").forEach(function(d){
+      var p = +d.getAttribute("data-p"); d.className = p === n ? "on" : (p < n ? "done" : "");
+    });
+    back.hidden = n === 1; next.hidden = n === 3; send.hidden = n !== 3;
+    document.getElementById("anfrage").scrollIntoView({behavior:"smooth"});
+  }
+  next.addEventListener("click", function(){ if (validateStep(step)) show(step + 1); });
+  back.addEventListener("click", function(){ show(step - 1); });
+
+  function val(id){ var el = document.getElementById(id); return el ? el.value.trim() : ""; }
+  function buildMail(){
+    var unfall = form.schaden.value === "Unfallschaden";
+    var dist = lookup(val("plz")), km = dist >= 0 ? "ca. " + dist + " km" : "Entfernung unbekannt";
+    var subject = "Neue Anfrage: " + val("marke") + " " + val("modell") + " " + val("ez") + ", " + form.schaden.value + ", " + val("plz") + " (" + km + ")";
+    var lines = [
+      "FAHRZEUG",
+      "Marke/Modell: " + val("marke") + " " + val("modell"),
+      "Erstzulassung: " + val("ez"),
+      "Kilometerstand: " + val("km"),
+      "Kraftstoff: " + val("kraftstoff") + " | Getriebe: " + val("getriebe"),
+      "Leistung: " + (val("ps") || "-") + " | HSN/TSN: " + (val("hsntsn") || "-"),
+      "",
+      "SCHADEN & ZUSTAND",
+      "Schaden: " + form.schaden.value + (unfall ? " (Stelle: " + (val("unfallstelle") || "-") + ", Airbags: " + (val("airbags") || "-") + ")" : ""),
+      "Springt an: " + form.anspringen.value + " | Fahrbereit: " + form.fahrbereit.value,
+      "TÜV: " + (val("tuev") || "-") + " | " + val("angemeldet"),
+      "Brief: " + val("brief") + " | Schlüssel: " + val("schluessel"),
+      "Beschreibung: " + (val("beschreibung") || "-"),
+      "",
+      "KUNDE",
+      "Name: " + val("name"),
+      "Handy: " + val("tel"),
+      "E-Mail: " + val("mail"),
+      "Standort: PLZ " + val("plz") + ", " + km + " von Thierhaupten",
+      "",
+      "Kunden per WhatsApp anschreiben: https://wa.me/" + val("tel").replace(/\D/g,"").replace(/^00/,"").replace(/^0/,"49")
+    ];
+    return {subject: subject, body: lines.join("\n")};
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    if (!validateStep(3)) return;
+    if (val("website")) return; // Spam-Falle
+    var m = buildMail();
+    var car = (val("marke") + " " + val("modell")).trim();
+    document.getElementById("wa-photos").href = waHref("Hallo, ich habe gerade eine Anfrage für meinen " + car + " (" + val("ez") + ") geschickt. Hier sind die Fotos:");
+    function done(){
+      form.hidden = true; document.querySelector(".progress").hidden = true;
+      document.getElementById("done").hidden = false;
+      document.getElementById("anfrage").scrollIntoView({behavior:"smooth"});
+    }
+    if (!WEB3FORMS_KEY){
+      document.getElementById("preview-text").textContent = "Betreff: " + m.subject + "\n\n" + m.body;
+      document.getElementById("preview").hidden = false;
+      done(); return;
+    }
+    send.disabled = true; send.textContent = "Wird gesendet …";
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST", headers: {"Content-Type": "application/json", "Accept": "application/json"},
+      body: JSON.stringify({access_key: WEB3FORMS_KEY, subject: m.subject, from_name: "ST Automobile Website", replyto: val("mail"), email: val("mail"), name: val("name"), message: m.body, botcheck: ""})
+    }).then(function(r){ return r.json(); }).then(function(j){
+      if (j.success) done(); else throw new Error();
+    }).catch(function(){
+      send.disabled = false; send.textContent = "Kostenloses Angebot anfordern";
+      var p = document.getElementById("send-err");
+      if (!p){ p = document.createElement("p"); p.id = "send-err"; p.className = "out-box"; p.style.marginTop = "16px"; form.appendChild(p); }
+      p.textContent = "Das Senden hat nicht geklappt. Bitte versuch es noch einmal oder schreib uns per WhatsApp: 0151 29629104.";
+    });
+  });
+})();
+</script>
+
+</body></html>
