@@ -175,6 +175,9 @@ legend{font-weight:600;font-size:20px;margin-bottom:18px;padding:0}
 .done-box h3{font-weight:500;font-size:26px;margin-top:12px;letter-spacing:-.02em}
 .done-box p{color:var(--muted);margin:12px 0 0}
 .done-box .btn{width:100%;margin-top:20px}
+.photo-list{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.photo-list li{margin:3px 0}
+.photo-note{margin-top:20px;background:#f1faf4;border:1px solid #cfe9d8;border-radius:var(--r);padding:14px 16px;font-size:14px;line-height:1.55}
 .preview{margin-top:24px;border:1px dashed #cfcbcd;border-radius:var(--r);padding:16px;background:var(--tint);font-size:13px}
 .preview b{display:block;margin-bottom:8px}
 .preview pre{white-space:pre-wrap;word-break:break-word;margin:0;font:13px/1.55 ui-monospace,Menlo,Consolas,monospace}
@@ -297,7 +300,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18px
           <h2>In drei Schritten verkauft.</h2>
         </div>
         <ol class="step-list">
-          <li><div><h3>Anfrage senden</h3><p>Füll das kurze Formular aus und schick uns ein paar Fotos per WhatsApp.</p></div></li>
+          <li><div><h3>Anfrage senden</h3><p>Füll das kurze Formular aus und schick uns Fotos von jeder Seite per WhatsApp.</p></div></li>
           <li><div><h3>Angebot erhalten</h3><p>Wir melden uns mit einem konkreten Preis für dein Auto. Du entscheidest in Ruhe.</p></div></li>
           <li><div><h3>Abholung &amp; Geld</h3><p>Wir holen das Auto kostenlos mit dem Anhänger ab. Du bekommst dein Geld sofort: bar oder per Überweisung.</p></div></li>
         </ol>
@@ -465,6 +468,7 @@ footer .legal{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18px
                 <div class="field" data-req><label for="mail">E-Mail</label><input id="mail" name="email" type="email" autocomplete="email" placeholder="name@beispiel.de"><span class="msg">Bitte gib eine gültige E-Mail-Adresse an.</span></div>
                 <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="botcheck" tabindex="-1" autocomplete="off"></div>
               </div>
+              <div class="photo-note"><b>📸 Nach dem Absenden:</b> Bitte schick uns per WhatsApp je ein Foto von <b>vorne, hinten, links und rechts</b>, dazu den Schaden, den Tacho und den Fahrzeugschein. Den Button dafür bekommst du gleich angezeigt.</div>
               <p class="privacy">Mit dem Absenden werden deine Angaben zur Bearbeitung deiner Anfrage an uns übermittelt. Details in der <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
             </fieldset>
 
@@ -477,7 +481,8 @@ footer .legal{grid-column:1/-1;border-top:1px solid var(--line);padding-top:18px
           <div class="done-box" id="done" hidden>
             <p class="eyebrow">Anfrage gesendet</p>
             <h3>Danke! Wir melden uns in Kürze.</h3>
-            <p>Für ein schnelleres und genaueres Angebot: Schick uns jetzt 3–4 Fotos deines Autos per WhatsApp (außen rundum, Schaden, Tacho, Fahrzeugschein).</p>
+            <p>Für ein schnelles und genaues Angebot schick uns jetzt bitte Fotos per WhatsApp:</p>
+            <ul class="photo-list"><li>je ein Bild von <b>vorne, hinten, links und rechts</b></li><li>den Schaden aus der Nähe</li><li>Tacho mit Kilometerstand</li><li>Fahrzeugschein</li></ul>
             <a class="btn btn-wa" id="wa-photos" href="https://wa.me/4915129629104" target="_blank" rel="noopener">Fotos per WhatsApp senden</a>
             <div class="preview" id="preview" hidden>
               <b>Vorschau-Modus: Das Formular ist noch nicht mit dem E-Mail-Dienst verbunden. Diese E-Mail ginge an stauto.ankauf@gmail.com:</b>
